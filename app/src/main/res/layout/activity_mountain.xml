@@ -1,0 +1,101 @@
+<android.support.percent.PercentRelativeLayout
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:app="http://schemas.android.com/apk/res-auto"
+
+xmlns:tools="http://schemas.android.com/tools"
+
+android:layout_width="match_parent"
+
+android:layout_height="match_parent"
+
+
+tools:context=".MountainActivity"
+android:id="@+id/background">
+
+
+
+
+
+<com.emilia.oromountain.HorizontalScrollViewExt
+    android:id="@+id/Container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<android.support.percent.PercentRelativeLayout
+    android:id="@+id/SubContainer"
+    android:layout_width="50dp"
+    android:layout_height="100dp"
+    android:smoothScrollbar="true"
+    android:scrollingCache="true"
+    android:animationCache="false"
+    >
+    <ImageView
+        android:id="@+id/Mountain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ImageView>
+    <RelativeLayout
+        android:id="@+id/Icons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>
+
+
+</com.emilia.oromountain.HorizontalScrollViewExt>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_template"
+        android:id="@+id/play_btn"
+        android:text="PLAY"
+        android:textColor="#ffffff"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/black_rect_top"
+        android:background="#000" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/black_rect_bottom"
+        android:background="#000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/return_btn"
+        android:src="@drawable/return_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="31dp" />
+
+</RelativeLayout>
+
+
+</android.support.percent.PercentRelativeLayout>
